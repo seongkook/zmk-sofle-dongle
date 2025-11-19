@@ -53,8 +53,8 @@
             bindings = <
 &kp ESC     &kp N1  &kp N2     &kp N3        &kp N4        &kp N5       &kp UP_ARROW     &kp N6         &kp N7     &kp N8     &kp N9         &kp N0      &kp BACKSPACE
 &kp TAB     &kp Q   &kp W      &kp E         &kp R         &kp T        &kp DOWN_ARROW   &kp Y          &kp U      &kp I      &kp O          &kp P       &kp BSLH
-&kp LCTRL   &kp A   &kp S      &kp D         &kp F         &kp G        &kp LEFT_ARROW   &kp H          &kp J      &kp K      &kp L          &kp SEMI    &kp APOS
-&kp LSHFT   &kp Z   &kp X      &kp C         &kp V         &kp B        &kp RIGHT_ARROW  &kp N          &kp M      &kp COMMA  &kp DOT        &kp FSLH    &kp ENTER
+&kp LCTRL   &kp A   &kp S      &kp D         &kp F         &kp G        &kp LEFT_ARROW   &kp H          &kp J      &kp K      &kp L          &kp SEMI    &kp ENTER
+&kp LSHFT   &kp Z   &kp X      &kp C         &kp V         &kp B        &kp RIGHT_ARROW  &kp N          &kp M      &kp COMMA  &kp DOT        &kp FSLH    &kp RIGHT_SHIFT
 &kp C_MUTE  &mo 2   &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE    &kp ENTER        &kp BACKSPACE  &kp SPACE  &mo 1      &kp RIGHT_ALT  &kp DELETE
             >;
 
@@ -64,11 +64,11 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE   &kp F1     &kp F2          &kp F3          &kp F4           &kp F5      &mmv MOVE_UP     &kp F6      &kp F7     &kp F8      &kp F9     &kp F10        &trans
-&trans      &kp GRAVE  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &mkp MB4    &mmv MOVE_DOWN   &kp PG_UP   &mkp LCLK  &kp UP      &kp HOME   &kp PAGE_UP    &kp EQUAL
-&trans      &kp TILDE  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5    &mmv MOVE_LEFT   &kp PG_DN   &kp LEFT   &kp DOWN    &kp RIGHT  &kp PAGE_DOWN  &kp RIGHT_BRACKET
-&trans      &none      &none           &none           &none            &none       &mmv MOVE_RIGHT  &none       &none      &kp INSERT  &kp F11    &kp F12        &trans
-&kp C_MUTE  &trans     &trans          &trans          &trans           &trans      &mkp LCLK        &kp DELETE  &trans     &trans      &trans     &trans
+&kp GRAVE   &kp F1          &kp F2          &kp F3           &kp F4          &kp F5      &mmv MOVE_UP     &kp F6      &kp F7     &kp F8      &kp F9     &kp F10        &trans
+&trans      &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &msc SCRL_UP    &mkp MB4    &mmv MOVE_DOWN   &kp PG_UP   &mkp LCLK  &kp UP      &kp HOME   &kp PAGE_UP    &kp EQUAL
+&trans      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &mkp MB5    &mmv MOVE_LEFT   &kp PG_DN   &kp LEFT   &kp DOWN    &kp RIGHT  &kp PAGE_DOWN  &kp RIGHT_BRACKET
+&trans      &none           &none           &none            &none           &none       &mmv MOVE_RIGHT  &none       &none      &kp INSERT  &kp F11    &kp F12        &trans
+&kp C_MUTE  &trans          &trans          &trans           &trans          &trans      &mkp LCLK        &kp DELETE  &trans     &trans      &trans     &trans
             >;
 
             display-name = "layer1";
@@ -77,11 +77,11 @@
 
         layer_2 {
             bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8      &kp F9     &kp MINUS         &kp EQUAL
-&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &kp F11     &kp F12    &kp LEFT_BRACKET  &kp EQUAL
-&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &trans  &trans      &trans     &kp LBRC          &kp RBRC
-&trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans  &sys_reset  &soft_off  &bootloader       &trans
-&trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &trans
+&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp C_VOLUME_UP  &kp F6  &kp F7   &kp F8      &kp F9     &kp MINUS      &kp EQUAL
+&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &kp C_VOL_DN     &trans  &kp F10  &kp F11     &kp F12    &kp SEMICOLON  &kp SQT
+&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &trans   &trans      &trans     &kp LBRC       &kp RBRC
+&trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans   &sys_reset  &soft_off  &bootloader    &trans
+&trans     &trans        &trans          &trans        &trans        &trans          &kp K_MUTE       &trans  &trans   &trans      &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;

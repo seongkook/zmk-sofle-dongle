@@ -51,11 +51,11 @@
 
         layer0 {
             bindings = <
-&kp ESC     &kp N1  &kp N2     &kp N3        &kp N4        &kp N5       &kp UP_ARROW     &kp N6         &kp N7     &kp N8     &kp N9         &kp N0      &kp BACKSPACE
-&kp TAB     &kp Q   &kp W      &kp E         &kp R         &kp T        &kp DOWN_ARROW   &kp Y          &kp U      &kp I      &kp O          &kp P       &kp BSLH
-&kp LCTRL   &kp A   &kp S      &kp D         &kp F         &kp G        &kp LEFT_ARROW   &kp H          &kp J      &kp K      &kp L          &kp SEMI    &kp ENTER
-&kp LSHFT   &kp Z   &kp X      &kp C         &kp V         &kp B        &kp RIGHT_ARROW  &kp N          &kp M      &kp COMMA  &kp DOT        &kp FSLH    &kp RIGHT_SHIFT
-&kp C_MUTE  &mo 2   &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE    &kp ENTER        &kp BACKSPACE  &kp SPACE  &mo 1      &kp RIGHT_ALT  &kp DELETE
+&kp ESC     &kp N1  &kp N2     &kp N3        &kp N4        &kp N5       &kp UP_ARROW     &kp N6         &kp N7     &kp N8     &kp N9         &kp N0    &kp BACKSPACE
+&kp TAB     &kp Q   &kp W      &kp E         &kp R         &kp T        &kp DOWN_ARROW   &kp Y          &kp U      &kp I      &kp O          &kp P     &kp BSLH
+&kp LCTRL   &kp A   &kp S      &kp D         &kp F         &kp G        &kp LEFT_ARROW   &kp H          &kp J      &kp K      &kp L          &kp SEMI  &kp ENTER
+&kp LSHFT   &kp Z   &kp X      &kp C         &kp V         &kp B        &kp RIGHT_ARROW  &kp N          &kp M      &kp COMMA  &kp DOT        &kp FSLH  &kp RIGHT_SHIFT
+&kp C_MUTE  &mo 2   &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE    &kp ENTER        &kp BACKSPACE  &kp SPACE  &mo 1      &kp RIGHT_ALT  &kp SQT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -77,10 +77,10 @@
 
         layer_2 {
             bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp C_VOLUME_UP  &kp F6  &kp F7   &kp F8      &kp F9     &kp MINUS      &kp EQUAL
-&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &kp C_VOL_DN     &trans  &kp F10  &kp F11     &kp F12    &kp SEMICOLON  &kp SQT
-&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &trans   &trans      &trans     &kp LBRC       &kp RBRC
-&trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans   &sys_reset  &soft_off  &bootloader    &trans
+&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp C_VOLUME_UP  &kp F6  &kp F7   &kp F8      &kp F9     &kp MINUS       &kp EQUAL
+&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &kp C_VOL_DN     &trans  &kp F10  &kp F11     &kp F12    &kp LEFT_BRACE  &kp RIGHT_BRACE
+&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &trans   &trans      &trans     &kp SEMICOLON   &kp SINGLE_QUOTE
+&trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans   &sys_reset  &soft_off  &bootloader     &trans
 &trans     &trans        &trans          &trans        &trans        &trans          &kp K_MUTE       &trans  &trans   &trans      &trans     &trans
             >;
 
